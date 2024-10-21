@@ -1,19 +1,16 @@
+git add styles.css
+git commit -m "Update styles: Change colors to a more elegant palette"
+git push origin main
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-img {
-    width: 300px;  /* Lebar gambar */
-    height: 400px; /* Tinggi gambar */
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    background-color: #f0f0f0; /* Warna latar belakang yang lebih lembut */
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #2c3e50; /* Warna header yang lebih modern */
+    color: #ecf0f1; /* Warna teks header yang lebih cerah */
     padding: 20px;
     text-align: center;
 }
@@ -21,17 +18,52 @@ header {
 section {
     padding: 20px;
     margin: 10px;
-    background: #fff;
+    background: #ffffff; /* Warna latar belakang section */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #34495e; /* Warna teks heading yang lebih gelap */
+}
+
+.foto-diri {
+    width: 300px;  /* Lebar gambar */
+    height: 400px; /* Tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    border-radius: 10px; /* Menambahkan sudut melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+.download-cv {
+    background-color: #2980b9; /* Warna tombol yang lebih menarik */
+    color: #ffffff; /* Warna teks tombol */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-cv:hover {
+    background-color: #1a5276; /* Warna tombol saat hover */
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
-    color: #fff;
+    background: #2c3e50; /* Warna footer yang sama dengan header */
+    color: #ecf0f1; /* Warna teks footer yang lebih cerah */
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Efek hover untuk tautan */
+a {
+    color: #2980b9; /* Warna tautan yang lebih elegan */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
